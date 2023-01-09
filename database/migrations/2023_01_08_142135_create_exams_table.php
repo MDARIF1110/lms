@@ -20,7 +20,7 @@ return new class extends Migration
             $table->text('description');
             $table->timestamps();
 
-            $table->foreign('curriculum_id')->references('id')->on('curriculams')->onDelete('cascade');
+            $table->foreign('curriculum_id')->references('id')->on('curriculums')->onDelete('cascade');
         });
     }
 
